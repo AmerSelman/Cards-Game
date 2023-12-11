@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="script.js" async></script>
+	<title>Game</title>
+</head>
+<body>
+	<h1 class="Naslov">CardS</h1>
+	<div class="game-container">
+		<div class="game-info-container">
+			<div class="game-info" id="first">
+				Player A: <span id="bodovi-A-igraca">0</span>
+			</div>
+			<div class="game-info" id="second">
+				Player B: <span id="bodovi-B-igraca">0</span>
+			</div>
+		</div>
+	<!-- Dodavanjem visible class karta ce se okrenuti-->
+		<div class="card" onload="RandomCard('0','0')" onclick="clickOnCard('0','0',this)">
+			<div class="card-back card-face">
+				<img class="Cback" src="karta.jpg">
+			</div>
+			<div class="card-front card-face">
+				<img class="Cfront" id="myimage1" src="">
+			</div> 
+		</div>
+		<div class="card" onload="RandomCard('0','1')" onclick="clickOnCard('0','1',this)">
+			<div class="card-back card-face">
+				<img class="Cback" src="karta.jpg">
+			</div>
+			<div class="card-front card-face">
+				<img class="Cfront" id="myimage2" src="">
+			</div>
+		</div>
+		<div class="card" onload="RandomCard('0','2')" onclick="clickOnCard('0','2',this)">
+			<div class="card-back card-face">
+				<img class="Cback" src="karta.jpg">
+			</div>
+			<div class="card-front card-face">
+				<img class="Cfront" id="myimage3" src="">
+			</div>
+		</div>
+		<div class="card" onload="RandomCard('0','3')" onclick="clickOnCard('0','3',this)">
+			<div class="card-back card-face">
+				<img class="Cback" src="karta.jpg">
+			</div>
+			<div class="card-front card-face">
+				<img class="Cfront" id="myimage4" src="">
+			</div>
+		</div>
+		<div class="card" onload="RandomCard('0','4')" onclick="clickOnCard('0','4',this)">
+			<div class="card-back card-face">
+				<img class="Cback" src="karta.jpg">
+			</div>
+			<div class="card-front card-face">
+				<img class="Cfront" id="myimage5" src="">
+			</div>
+		</div>
+		<div class="card" onload="RandomCard('1','0')" onclick="clickOnCard('1','0',this)">
+			<div class="card-back card-face">
+				<img class="Cback" src="karta.jpg">
+			</div>
+			<div class="card-front card-face">
+				<img class="Cfront" id="myimage6" src="">
+			</div>
+		</div>
+		<div class="card" onload="RandomCard('1','1')" onclick="clickOnCard('1','1',this)">
+			<div class="card-back card-face">
+				<img class="Cback"  src="karta.jpg">
+			</div>
+			<div class="card-front card-face">
+				<img class="Cfront" id="myimage7" src="">
+			</div>
+		</div>
+		<div class="card" onload="RandomCard('1','2')" onclick="clickOnCard('1','2',this)">
+			<div class="card-back card-face">
+				<img class="Cback"  src="karta.jpg">
+			</div>
+			<div class="card-front card-face">
+				<img class="Cfront" id="myimage8" src="">
+			</div>
+		</div>
+		<div class="card" onload="RandomCard('1','3')" onclick="clickOnCard('1','3',this)">
+			<div class="card-back card-face">
+				<img class="Cback" src="karta.jpg">
+			</div>
+			<div class="card-front card-face">
+				<img class="Cfront" id="myimage9" src="">
+			</div>
+		</div>
+		<div class="card" onload="RandomCard('1','4')" onclick="clickOnCard('1','4',this)">
+			<div class="card-back card-face">
+				<img class="Cback" src="karta.jpg">
+			</div>
+			<div class="card-front card-face">
+				<img class="Cfront" id="myimage10" src="">
+			</div>
+		</div>
+		<div class="card" onload="RandomCard('2','0')" onclick="clickOnCard('2','0',this)">
+			<div class="card-back card-face">
+				<img class="Cback" src="karta.jpg">
+			</div>
+			<div class="card-front card-face">
+				<img class="Cfront" id="myimage11" src="">
+			</div>
+		</div>
+		<div class="card" onload="RandomCard('2','1')" onclick="clickOnCard('2','1',this)">
+			<div class="card-back card-face">
+				<img class="Cback" src="karta.jpg">
+			</div>
+			<div class="card-front card-face">
+				<img class="Cfront" id="myimage12" src="">
+			</div>
+		</div>
+		<div class="card" onload="RandomCard('2','2')" onclick="clickOnCard('2','2',this)">
+			<div class="card-back card-face">
+				<img class="Cback" src="karta.jpg">
+			</div>
+			<div class="card-front card-face">
+				<img class="Cfront" id="myimage13" src="">
+			</div>
+		</div>
+		<div class="card" onload="RandomCard('2','3')" onclick="clickOnCard('2','3',this)">
+			<div class="card-back card-face">
+				<img class="Cback"  src="karta.jpg">
+			</div>
+			<div class="card-front card-face">
+				<img class="Cfront" id="myimage14" src="">
+			</div>
+		</div>
+		<div class="card" onload="RandomCard('2','4')" onclick="clickOnCard('2','4',this)">
+			<div class="card-back card-face">
+				<img class="Cback"  src="karta.jpg">
+			</div>
+			<div class="card-front card-face">
+				<img class="Cfront" id="myimage15" src="">
+			</div>
+		</div>
+		<div class="card" onload="RandomCard('3','0')" onclick="clickOnCard('3','0',this)">
+			<div class="card-back card-face">
+				<img class="Cback" src="karta.jpg">
+			</div>
+			<div class="card-front card-face">
+				<img class="Cfront" id="myimage16" src="">
+			</div>
+		</div>
+		<div class="card" onload="RandomCard('3','1')" onclick="clickOnCard('3','1',this)">
+			<div class="card-back card-face">
+				<img class="Cback"  src="karta.jpg">
+			</div>
+			<div class="card-front card-face">
+				<img class="Cfront" id="myimage17" src="">
+			</div>
+		</div>
+		<div class="card" onload="RandomCard('3','2')" onclick="clickOnCard('3','2',this)">
+			<div class="card-back card-face">
+				<img class="Cback" src="karta.jpg">
+			</div>
+			<div class="card-front card-face">
+				<img class="Cfront" id="myimage18" src="">
+			</div>
+		</div>
+		<div class="card" onload="RandomCard('3','3')" onclick="clickOnCard('3','3',this)">
+			<div class="card-back card-face">
+				<img class="Cback" src="karta.jpg">
+			</div>
+			<div class="card-front card-face">
+				<img class="Cfront" id="myimage19" src="">
+			</div>
+		</div>
+		<div class="card" onload="RandomCard('3','4')" onclick="clickOnCard('3','4',this)">
+			<div class="card-back card-face">
+				<img class="Cback" src="karta.jpg">
+			</div>
+			<div class="card-front card-face">
+				<img class="Cfront" id="myimage20" src="">
+			</div>
+		</div>
+		<div class="card" onload="RandomCard('4','0')" onclick="clickOnCard('4','0',this)">
+			<div class="card-back card-face">
+				<img class="Cback" src="karta.jpg">
+			</div>
+			<div class="card-front card-face">
+				<img class="Cfront" id="myimage21" src="">
+			</div>
+		</div>
+		<div class="card" onload="RandomCard('4','1')" onclick="clickOnCard('4','1',this)">
+			<div class="card-back card-face">
+				<img class="Cback"  src="karta.jpg">
+			</div>
+			<div class="card-front card-face">
+				<img class="Cfront" id="myimage22" src="">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-back card-face">
+				<img class="Cback" onload="RandomCard('4','2')" onclick="clickOnCard('4','2',this)" src="karta.jpg">
+			</div>
+			<div class="card-front card-face">
+				<img class="Cfront" id="myimage23" src="">
+			</div>
+		</div>
+		<div class="card" onload="RandomCard('4','3')" onclick="clickOnCard('4','3',this)">
+			<div class="card-back card-face">
+				<img class="Cback" src="karta.jpg">
+			</div>
+			<div class="card-front card-face">
+				<img class="Cfront" id="myimage24" src="">
+			</div>
+		</div>
+		<div class="card" onload="RandomCard('4','4')" onclick="clickOnCard('4','4')">
+			<div class="card-back card-face">
+				<img class="Cback" src="karta.jpg">
+			</div>
+			<div class="card-front card-face">
+				<img class="Cfront" id="myimage25" src="">
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
